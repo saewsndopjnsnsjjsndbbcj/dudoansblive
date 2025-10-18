@@ -88,7 +88,7 @@ function getDuDoanVi(tong, duDoan) {
 // === API CHÍNH ===
 app.get('/api/sicbo/vip', async (req, res, next) => {
   try {
-    const response = await axiosInstance.get('https://ksj-59sp.onrender.com/api/sicbo/live');
+    const response = await axiosInstance.get('https://lssunlive-4.onrender.com/api/sicbo/live');
     const latest = response.data;
 
     if (!latest || !latest.Phien) {
@@ -137,3 +137,4 @@ app.listen(PORT, () => {
 });
 
       
+
